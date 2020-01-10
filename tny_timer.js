@@ -19,7 +19,7 @@ function showClock(){
    var localTime= thisDay.toLocaleTimeString();
    document.getElementById("currentTime").innerHTML= "<span>"+localDate+"</span><span>"+localTime+"</span>";
    var j4Date= nextJuly4(thisDay);
-   j4Date.setHours("21");
+   j4Date.setHours(21);
    var days=(j4Date-thisDay)/(1000*60*60*24);
    var hrs=(days-Math.floor(days))*24;
    var mins=(hrs-Math.floor(hrs))*60;
